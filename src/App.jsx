@@ -1,13 +1,17 @@
 import Blogs from "./components/Blogs/Blogs"
+import Bookmarks from "./components/Bookmarks/Bookmarks"
 import Header from "./components/Header/Header"
 
 function App() {
-  
+
 
   return (
     <>
       <Header></Header>
-      <Blogs></Blogs>
+      <div className="md:flex justify-between items-center">
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </>
   )
 }
